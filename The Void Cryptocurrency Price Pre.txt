@@ -1,0 +1,55 @@
+# The Void: Cryptocurrency Price Prediction
+
+This project, "The Void," develops and compares machine learning models to predict cryptocurrency high prices based on daily market data. Utilizing historical '24h Low' and '24h Change (Calculated)' data, this analysis aims to provide insights into short-term price movements, which can be valuable for traders, investors, and market analysts.
+
+## 📈 Business Impact
+
+Accurate price prediction in the volatile cryptocurrency market can lead to informed decision-making, potentially optimizing trading strategies and risk management. This project demonstrates the application of regression models to derive actionable insights from complex financial data.
+
+## 📁 Project Structure & Navigation
+
+* **[Summary Report](summary_report.md)**: A non-technical overview of the project's problem, goals, methods, main findings, and strategic takeaways. Ideal for hiring managers and recruiters.
+* **[Technical Analysis](The_Void.ipynb)**: The core Jupyter Notebook containing the data preprocessing, model training (Ridge Regression and Random Forest Regressor), evaluation, and detailed code implementation. For technical stakeholders, analysts, and engineers.
+* `requirements.txt`: Lists all necessary Python dependencies to set up the project environment.
+* `Cryptocurrency Different - Sheet3.csv`: The dataset used for this analysis.
+* `/assets/`: (To be created) Contains any generated visuals or export files.
+* `/data/`: (To be created) Placeholder for additional data if needed (currently, `Cryptocurrency Different - Sheet3.csv` is at the root).
+
+## 🛠️ Tools & Technologies
+
+* Python
+* Pandas (for data manipulation)
+* NumPy (for numerical operations)
+* Scikit-learn (for machine learning models: `StandardScaler`, `Ridge`, `RandomForestRegressor`, `train_test_split`)
+* Matplotlib (for data visualization)
+* Seaborn (for enhanced data visualization)
+
+## 🚀 Setup & Usage Instructions
+
+To run this project locally:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Rashad1019/the_void.git](https://github.com/Rashad1019/the_void.git)
+    cd the_void
+    ```
+2.  **Create a virtual environment (recommended):**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Run the Jupyter Notebook:**
+    ```bash
+    jupyter notebook The_Void.ipynb
+    ```
+    Follow the instructions within the notebook cells to execute the analysis.
+
+## 📧 Contact
+
+For any questions or further discussion, please feel free to reach out.
+
+---

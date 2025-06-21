@@ -1,0 +1,50 @@
+# Project Handoff Document: Cryptocurrency Price Prediction
+
+**Date:** June 21, 2025
+
+**Project Goal:** Build, evaluate, and compare Ridge Regression and Random Forest Regressor models for cryptocurrency price prediction using `Cryptocurrency Different - Sheet3.csv` in a Jupyter Notebook. All explanations must be in plain language for a non-technical audience.
+
+---
+
+## **Current State:** Ridge Regression Completed
+
+**We have successfully:**
+
+* Loaded `Cryptocurrency Different - Sheet3.csv`.
+* Cleaned and preprocessed the data (converted price strings to numbers, handled missing values, scaled features).
+* Split the data into training and testing sets.
+* Trained a **Ridge Regression** model.
+* Calculated its evaluation metrics (MAE, MSE, RMSE, R-squared) and stored them in variables (no print output from the cell).
+* Generated two plots (Actual vs. Predicted, Residuals Distribution) for Ridge Regression.
+* Provided a **concise Markdown explanation** for these Ridge Regression charts, delivered directly in the chat as raw Markdown syntax.
+
+**The Jupyter Notebook currently contains 5 executed cells:**
+
+* **Cell 1:** Library Imports and CSV Data Loading.
+* **Cell 2:** Data Preprocessing, Type Conversion, Feature (`X_scaled_df`) and Target (`y`) Definition, Feature Scaling.
+* **Cell 3:** Data Split into `X_train`, `X_test`, `y_train`, `y_test`.
+* **Cell 4:** Ridge Regression Model Training, Prediction, and Metric Calculation (silent output).
+* **Cell 5:** Ridge Regression Model Visualizations (plots `y_test` vs `y_pred_ridge`, and residuals).
+* *(A separate Markdown cell with the chart explanation can be added by the user at their discretion based on previous chat output)*
+
+**Key Variables Currently Available in Jupyter Kernel:** `df`, `X_scaled_df`, `y`, `X_train`, `X_test`, `y_train`, `y_test`, `ridge_model`, `y_pred_ridge`, `mae_ridge`, `mse_ridge`, `rmse_ridge`, `r2_ridge`.
+
+---
+
+## **Next Actions Required:** Random Forest Regressor Implementation
+
+The next major step is to implement the Random Forest Regressor.
+
+**Instructions for the Chat Model:**
+
+1.  **Acknowledge Handoff:** Confirm understanding of this document and the current state.
+2.  **Next User Prompt:** **Wait for the user's explicit "next" command.**
+3.  **Provide Random Forest Training/Evaluation Cell:** Upon user's "next" command, provide the Python code for a **new Jupyter cell** that will:
+    * Import `RandomForestRegressor`.
+    * Initialize and train the `RandomForestRegressor` using `X_train` and `y_train`.
+    * Make predictions on `X_test`.
+    * Calculate `mae_rf`, `mse_rf`, `rmse_rf`, `r2_rf` but **DO NOT include any `print()` statements** in the code cell.
+4.  **No Unsolicited Output/Explanations:** Do not provide any conversational text, explanations, or additional code beyond what is explicitly requested for the current cell.
+5.  **Strict "One Cell at a Time" Rule:** Continue providing one Jupyter code cell per "next" command until the Random Forest implementation and comparison phases are complete.
+6.  **Plain Language for Explanations (when requested):** If the user later asks for explanations of the Random Forest charts or the final comparison, ensure they are in simple, non-technical terms.
+7.  **Markdown Format for Explanations (when requested):** If the user asks for explanations in Markdown, provide the **raw Markdown syntax** (e.g., `##`, `*`, `**`) directly in the chat as a fenced code block (` ```markdown `).
