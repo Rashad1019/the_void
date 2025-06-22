@@ -13084,41 +13084,7 @@ div#notebook {
     }
     init_mathjax();
     </script>
-<!-- End of mathjax configuration -->
-<style>
-  @media screen and (max-width: 768px) {
-    body, html {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
-
-    .container, .container-fluid, .row {
-      width: 100% !important;
-      margin: 0 auto !important;
-      padding: 0 15px !important;
-    }
-
-    pre, code {
-      white-space: pre-wrap;
-      word-wrap: break-word;
-    }
-
-    iframe, img, video {
-      max-width: 100%;
-      height: auto;
-    }
-
-    table {
-      display: block;
-      overflow-x: auto;
-      width: 100%;
-    }
-  }
-</style>
-
-</head>
+<!-- End of mathjax configuration --></head>
 <body>
 <main>
 <div class="border-box-sizing" id="notebook" tabindex="-1">
@@ -13285,5 +13251,25 @@ div#notebook {
 </div>
 </div>
 </main>
+  <style>
+  /* Add this block for mobile responsiveness */
+  @media (max-width: 767px) {
+    div#notebook-container {
+      /* Reduce the large horizontal padding for small screens */
+      padding: 15px;
+    }
+    
+    /* Ensure code cells and outputs don't have extra padding causing overflow */
+    div.cell {
+      padding: 5px;
+    }
+
+    /* Ensure images and tables fit within the screen width */
+    img, table {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+</style>
 </body>
 </html>
